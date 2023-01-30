@@ -1,0 +1,23 @@
+server:
+    port: 8080
+
+spring:
+    datasource:
+      url: jdbc:h2:file:~/be5.h2
+      #        url: jdbc:h2:mem:be5
+      username: sa
+      password:
+
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+
+    jpa:
+      generate-ddl: true
+      show-sql: true
+      defer-datasource-initialization: true
+
+    sql:
+      init:
+        mode: always
